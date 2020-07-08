@@ -1,0 +1,176 @@
+autostart = False
+version = 2.1.1
+[vbox 127.0.0.1:16600]
+    workingdir = None
+    udp = 16000
+    [[PC PC_4]]
+        image = .
+        device_id = 4
+        bridge_mac = 86-a5-57-4e-04-00
+        slot0 = PC 250
+        GE_0/1 = SW1 GE_0/4
+        symbol = PC
+        x = 282.0
+        y = 55.0
+        z = 5.0
+    [[PC PC_2]]
+        image = .
+        device_id = 2
+        bridge_mac = 86-a5-48-37-02-00
+        slot0 = PC 250
+        GE_0/1 = SW1 GE_0/2
+        symbol = PC
+        x = -268.0
+        y = 117.0
+        z = 5.0
+    [[PC PC_3]]
+        image = .
+        device_id = 3
+        bridge_mac = 86-a5-52-f8-03-00
+        slot0 = PC 250
+        GE_0/1 = SW1 GE_0/3
+        symbol = PC
+        x = 0.0
+        y = 84.0
+        z = 5.0
+    [[PC PC_1]]
+        image = .
+        device_id = 1
+        bridge_mac = 86-a5-38-52-01-00
+        slot0 = PC 250
+        GE_0/1 = SW1 GE_0/1
+        symbol = PC
+        x = -396.0
+        y = 56.0
+        z = 5.0
+    [[S5820V2-54QS-GE SW1]]
+        image = .
+        device_id = 5
+        bridge_mac = 88-5c-ca-4c-05-00
+        slot0 = S5800 512
+        GE_0/1 = PC_1 GE_0/1
+        GE_0/2 = PC_2 GE_0/1
+        GE_0/3 = PC_3 GE_0/1
+        GE_0/4 = PC_4 GE_0/1
+        GE_0/5 = MSR36-20_6 GE_0/0
+        x = -67.0
+        y = -89.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_6]]
+        image = .
+        device_id = 6
+        bridge_mac = 88-65-d0-ff-06-00
+        slot0 = MSR36 512
+        GE_0/0 = SW1 GE_0/5
+        x = -91.0
+        y = -235.0
+        z = 5.0
+[GNS3-DATA]
+    [[NOTE 1]]
+        text = "vlan 2"
+        x = -421.0
+        y = -59.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 2]]
+        text = "0/2"
+        x = -138.0
+        y = -12.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 3]]
+        text = "vlan 1\n"
+        x = 239.0
+        y = -51.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 4]]
+        text = "vlan 3"
+        x = 46.0
+        y = 226.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 5]]
+        text = "0/4"
+        x = 68.0
+        y = -48.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 6]]
+        text = "192.168.2.3"
+        x = -288.0
+        y = 194.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 7]]
+        text = "0/3"
+        x = -41.0
+        y = -14.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 8]]
+        text = "192.168.3.2"
+        x = -26.0
+        y = 174.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 9]]
+        text = "0/1"
+        x = -159.0
+        y = -72.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 10]]
+        text = "192.168.2.2"
+        x = -440.0
+        y = -11.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 11]]
+        text = "192.168.1.2"
+        x = 254.0
+        y = 135.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 12]]
+        text = "0/5"
+        x = -58.0
+        y = -137.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 13]]
+        text = "0/0"
+        x = -168.0
+        y = -246.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[SHAPE 1]]
+        type = ellipse
+        x = 208.0
+        y = 12.0
+        width = 200.0
+        height = 200.0
+        fill_color = "#ff0000"
+        border_color = "#666666"
+        border_style = 2
+        z = 3.0
+    [[SHAPE 2]]
+        type = ellipse
+        x = -447.0
+        y = 17.0
+        width = 280.0
+        height = 200.0
+        fill_color = "#00ff00"
+        border_color = "#666666"
+        border_style = 2
+        z = 3.0
+    [[SHAPE 3]]
+        type = ellipse
+        x = -68.0
+        y = 33.0
+        width = 200.0
+        height = 200.0
+        fill_color = "#aaaaff"
+        border_color = "#666666"
+        border_style = 2
+        z = 3.0

@@ -1,0 +1,182 @@
+autostart = False
+version = 2.1.1
+[vbox 127.0.0.1:16600]
+    workingdir = None
+    udp = 16000
+    [[PC PC_4]]
+        image = .
+        device_id = 4
+        bridge_mac = 88-69-b3-f6-04-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_1 GE_0/3
+        symbol = PC
+        x = -11.0
+        y = 98.0
+        z = 5.0
+    [[PC PC_5]]
+        image = .
+        device_id = 5
+        bridge_mac = 88-69-c0-68-05-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_1 GE_0/4
+        symbol = PC
+        x = 248.0
+        y = 29.0
+        z = 5.0
+    [[PC PC_2]]
+        image = .
+        device_id = 2
+        bridge_mac = 88-60-75-e3-02-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_1 GE_0/1
+        symbol = PC
+        x = -372.0
+        y = -2.0
+        z = 5.0
+    [[PC PC_3]]
+        image = .
+        device_id = 3
+        bridge_mac = 88-60-78-c2-03-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_1 GE_0/2
+        symbol = PC
+        x = -236.0
+        y = 91.0
+        z = 5.0
+    [[S5820V2-54QS-GE S5820V2-54QS-GE_1]]
+        image = .
+        device_id = 1
+        bridge_mac = 88-60-65-54-01-00
+        slot0 = S5800 512
+        GE_0/1 = PC_2 GE_0/1
+        GE_0/2 = PC_3 GE_0/1
+        GE_0/3 = PC_4 GE_0/1
+        GE_0/4 = PC_5 GE_0/1
+        GE_0/5 = MSR36-20_6 GE_0/0
+        x = -67.0
+        y = -104.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_6]]
+        image = .
+        device_id = 6
+        bridge_mac = 88-6a-1c-6e-06-00
+        slot0 = MSR36 512
+        GE_0/0 = S5820V2-54QS-GE_1 GE_0/5
+        x = -72.0
+        y = -255.0
+        z = 5.0
+[GNS3-DATA]
+    [[NOTE 1]]
+        text = "VLAN1"
+        x = 225.0
+        y = -91.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 2]]
+        text = "VLAN3"
+        x = 14.0
+        y = 14.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 3]]
+        text = "VLAN2"
+        x = -283.0
+        y = -78.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 4]]
+        text = "PC4\n"
+        x = -227.0
+        y = 148.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 5]]
+        text = "PC3"
+        x = -370.0
+        y = 51.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 6]]
+        text = "PC5"
+        x = -5.0
+        y = 150.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 7]]
+        text = "PC6"
+        x = 251.0
+        y = 81.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 8]]
+        text = "192.168.2.2"
+        x = -427.0
+        y = -69.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 9]]
+        text = "192.168.2.3"
+        x = -370.0
+        y = 198.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 10]]
+        text = "SW1"
+        x = 0.0
+        y = -118.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 11]]
+        text = "R1"
+        x = -3.0
+        y = -242.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 12]]
+        text = "0/0\n0/0.1 VLAN1\n0/0.2 VLAN2\n0/0.3 VLAN3"
+        x = -296.0
+        y = -267.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 13]]
+        text = "192.168.3.2"
+        x = -43.0
+        y = 215.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 14]]
+        text = "192.168.1.2"
+        x = 227.0
+        y = 147.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[SHAPE 1]]
+        type = ellipse
+        x = -420.0
+        y = -41.0
+        width = 312.0
+        height = 242.0
+        fill_color = "#0055ff"
+        border_color = "#666666"
+        border_style = 2
+        z = 3.0
+    [[SHAPE 2]]
+        type = ellipse
+        x = -85.0
+        y = 29.0
+        width = 200.0
+        height = 200.0
+        fill_color = "#ffff00"
+        border_color = "#666666"
+        border_style = 2
+        z = 3.0
+    [[SHAPE 3]]
+        type = ellipse
+        x = 179.0
+        y = -59.0
+        width = 200.0
+        height = 200.0
+        fill_color = "#ff5500"
+        border_color = "#666666"
+        border_style = 2
+        z = 3.0

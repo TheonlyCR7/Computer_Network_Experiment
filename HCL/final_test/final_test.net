@@ -1,0 +1,256 @@
+autostart = False
+version = 2.1.1
+[vbox 127.0.0.1:16600]
+    workingdir = None
+    udp = 16000
+    [[MSR36-20 MSR36-20_3]]
+        image = .
+        device_id = 3
+        bridge_mac = a6-6e-54-42-03-00
+        slot0 = MSR36 512
+        GE_0/0 = PC_8 GE_0/1
+        Ser_3/0 = MSR36-20_2 Ser_1/0
+        x = 190.0
+        y = -49.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_2]]
+        image = .
+        device_id = 2
+        bridge_mac = a6-6e-50-fc-02-00
+        slot0 = MSR36 512
+        Ser_1/0 = MSR36-20_3 Ser_3/0
+        Ser_2/0 = MSR36-20_1 Ser_1/0
+        x = -134.0
+        y = -53.0
+        z = 5.0
+    [[MSR36-20 MSR36-20_1]]
+        image = .
+        device_id = 1
+        bridge_mac = a6-86-65-2f-01-00
+        slot0 = MSR36 512
+        GE_0/0 = PC_7 GE_0/1
+        GE_0/1 = S5820V2-54QS-GE_4 GE_0/1
+        Ser_1/0 = MSR36-20_2 Ser_2/0
+        x = -476.0
+        y = -45.0
+        z = 5.0
+    [[PC PC_5]]
+        image = .
+        device_id = 5
+        bridge_mac = a6-6e-98-b6-05-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_4 GE_0/6
+        symbol = PC
+        x = -645.0
+        y = -373.0
+        z = 5.0
+    [[PC PC_7]]
+        image = .
+        device_id = 7
+        bridge_mac = a6-6e-b4-7a-07-00
+        slot0 = PC 250
+        GE_0/1 = MSR36-20_1 GE_0/0
+        symbol = PC
+        x = -478.0
+        y = 150.0
+        z = 5.0
+    [[S5820V2-54QS-GE S5820V2-54QS-GE_4]]
+        image = .
+        device_id = 4
+        bridge_mac = a6-6e-65-38-04-00
+        slot0 = S5800 512
+        GE_0/1 = MSR36-20_1 GE_0/1
+        GE_0/6 = PC_5 GE_0/1
+        GE_0/7 = PC_6 GE_0/1
+        x = -474.0
+        y = -226.0
+        z = 5.0
+    [[PC PC_8]]
+        image = .
+        device_id = 8
+        bridge_mac = a6-6e-d5-86-08-00
+        slot0 = PC 250
+        GE_0/1 = MSR36-20_3 GE_0/0
+        symbol = PC
+        x = 498.0
+        y = -53.0
+        z = 5.0
+    [[PC PC_6]]
+        image = .
+        device_id = 6
+        bridge_mac = a6-6e-9b-a9-06-00
+        slot0 = PC 250
+        GE_0/1 = S5820V2-54QS-GE_4 GE_0/7
+        symbol = PC
+        x = -367.0
+        y = -379.0
+        z = 5.0
+[GNS3-DATA]
+    [[NOTE 1]]
+        text = "S1/0"
+        x = -78.0
+        y = -26.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 2]]
+        text = "S3/0"
+        x = 138.0
+        y = -23.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 3]]
+        text = "S2/0"
+        x = -195.0
+        y = -25.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 4]]
+        text = "R2"
+        x = -133.0
+        y = -94.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 5]]
+        text = "G0/1"
+        x = -449.0
+        y = 114.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 6]]
+        text = "R3"
+        x = 187.0
+        y = -89.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 7]]
+        text = "S1/0"
+        x = -421.0
+        y = -21.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 8]]
+        text = "192.168.5.0/24"
+        x = -575.0
+        y = 81.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 9]]
+        text = "PC8"
+        x = 500.0
+        y = 21.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 10]]
+        text = "G0/0\n"
+        x = 196.0
+        y = 19.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 11]]
+        text = "G0/1"
+        x = -447.0
+        y = -173.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 12]]
+        text = "G0/1"
+        x = -445.0
+        y = -83.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 13]]
+        text = "G0/6"
+        x = -551.0
+        y = -259.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 14]]
+        text = "G0/7"
+        x = -424.0
+        y = -257.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 15]]
+        text = "PC6"
+        x = -653.0
+        y = -320.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 16]]
+        text = "PC7"
+        x = -352.0
+        y = -328.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 17]]
+        text = "100.100.8.0/24"
+        x = 444.0
+        y = -99.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 18]]
+        text = "100.100.23.0/24"
+        x = -59.0
+        y = -66.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 19]]
+        text = "G0/0"
+        x = -504.0
+        y = 19.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 20]]
+        text = "VLAN7\n172.16.7.0/24"
+        x = -339.0
+        y = -301.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 21]]
+        text = "VLAN6\n172.16.6.0/24"
+        x = -723.0
+        y = -288.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 22]]
+        text = "100.100.12.0/24"
+        x = -356.0
+        y = -58.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 23]]
+        text = "SW"
+        x = -530.0
+        y = -195.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 24]]
+        text = "PC5"
+        x = -475.0
+        y = 208.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[NOTE 25]]
+        text = "R1"
+        x = -527.0
+        y = -36.0
+        font = "Arial,14,-1,5,75,0,0,0,0,0"
+        z = 6.0
+    [[SHAPE 1]]
+        type = rectangle
+        x = -685.0
+        y = 55.0
+        width = 375.0
+        height = 200.0
+        border_color = "#666666"
+        border_style = 2
+        z = 3.0
+    [[SHAPE 2]]
+        type = rectangle
+        x = -824.0
+        y = -402.0
+        width = 636.0
+        height = 279.0
+        border_color = "#666666"
+        border_style = 2
+        z = 3.0
